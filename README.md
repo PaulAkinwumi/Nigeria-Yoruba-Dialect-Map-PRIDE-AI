@@ -29,4 +29,3 @@ Markers are illustrative locations within each recorded state. They are not surv
 
 - The page uses CDN-hosted Leaflet, MarkerCluster, Tailwind CSS, and Google Fonts, so it needs an internet connection.
 - No API keys or environment variables are required.
-- A `LICENSE` file is optional. Add one only if you want to grant others explicit permission to reuse the code.
