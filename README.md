@@ -25,55 +25,6 @@ State boundaries are from geoBoundaries (GRID3, CC BY 4.0), simplified for displ
 
 Markers are illustrative locations within each recorded state. They are not surveyed dialect boundaries.
 
-## Run locally
-
-From this folder:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open <http://localhost:8000>.
-
-You can also open `index.html` directly in a browser, but a local server is recommended so relative files and browser security rules behave consistently.
-
-## Deploy to GitHub Pages
-
-1. Create a new empty repository on GitHub. Do not add a README or `.gitignore` there because they are already in this folder.
-2. In this folder, initialize Git and push:
-
-```bash
-git init
-git add .
-git commit -m "Build Nigeria Yoruba dialect map"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-git push -u origin main
-```
-
-3. On GitHub, open **Settings → Pages**.
-4. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-5. Select branch **main** and folder **/(root)**, then click **Save**.
-6. Wait for the deployment to finish. The site will be available at:
-
-```text
-https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/
-```
-
-`index.html` must stay at the repository root for GitHub Pages to serve it automatically.
-
-## Project structure
-
-```text
-.
-├── index.html
-├── README.md
-├── .gitignore
-└── Yoruba dialects and their states.xlsx
-```
-
-The workbook is the source data and is not required by the live page, because the map data is embedded in `index.html`.
-
 ## Notes
 
 - The page uses CDN-hosted Leaflet, MarkerCluster, Tailwind CSS, and Google Fonts, so it needs an internet connection.
